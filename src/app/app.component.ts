@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {MyFirstComponent} from './my-first.component';
+import {FullNameComponent} from './full-name/full-name.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [MyFirstComponent, FullNameComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
